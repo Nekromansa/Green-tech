@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Green Tech | Africa Fintech Foundry</title>
+
+    <link href="assets/css/page.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon.png">
+</head>
+
+<style>
+  .pswp {
+    width: 0px;
+    height: 0px;
+    opacity: 0.0;
+    display: none;
+  }
+</style>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+
+              <div class="navbar-left">
+                <button class="navbar-toggler" type="button">☰</button>
+                <a class="navbar-brand" href="#">
+                  <img style="margin: 10px;" class="logo-dark" src="assets/img/green-energy.png" alt="logo">
+                  <img class="logo-light" src="../assets/img/logo-light.png" alt="logo">
+                </a>
+              </div>
+
+              <section class="navbar-mobile">
+                <nav class="nav nav-navbar ml-auto">
+                  <a class="nav-link" href="/form">Enrollment</a>
+                  <a class="nav-link" href="#">Credit Score</a>
+                  <a class="nav-link active" href="/grn">GRN</a>
+                  <a class="nav-link" href="/loan">Loan Disbursement</a>
+                  <a class="nav-link" href="/report">Report</a>
+                </nav>
+
+                <span class="navbar-divider"></span>
+
+                <div>
+                  <a class="btn btn-block btn-success ml-lg-4 mr-2" href="#">Sign out</a>
+                </div>
+              </section>
+
+            </div>
+          </nav>
+
+    <header class="header text-center pb-0">
+      <div class="container">
+        <h1 class="display-4">CREDIT SCORE</h1>
+      </div>
+    </header>          
+
+<main class="main-content">
+  <canvas id="doughnut-chart" width="800" height="450"></canvas>
+</main>
+
+    <script src="assets/js/page.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script>
+      new Chart(document.getElementById("doughnut-chart"), {
+          type: 'doughnut',
+          data: {
+            labels: ["Soil", "Meetups", "Identity", "Latin America", "North America"],
+            datasets: [
+              {
+                label: "Population (millions)",
+                backgroundColor: ["#3e95cd", "#fff","#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+                data: [80,20,100,100,100]
+              }
+            ]
+          },
+          options: {
+            title: {
+              display: true,
+              text: 'Predicted world population (millions) in 2050'
+            }
+          }
+      });
+    </script>
+
+  </body>
+
+</html>
