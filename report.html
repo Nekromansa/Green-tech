@@ -9,7 +9,6 @@
 
     <title>Green Tech | Africa Fintech Foundry</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
     <link href="assets/css/page.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
@@ -59,15 +58,12 @@
 
     <header class="header text-center pb-0">
       <div class="container">
-        <h1 class="display-4">CREDIT SCORE </h1>
-        <h4 class="display-8">USING ALTERNATIVE DATA FOR OUR SCORING SYSTEM</h4>
-
+        <h1 class="display-4">CREDIT SCORE</h1>
       </div>
     </header>          
 
 <main class="main-content">
   <canvas id="doughnut-chart" width="800" height="450"></canvas>
-
 </main>
 
     <script src="assets/js/page.min.js"></script>
@@ -77,23 +73,23 @@
       new Chart(document.getElementById("doughnut-chart"), {
           type: 'doughnut',
           data: {
+            labels: ["Soil", "Meetups", "Identity", "Latin America", "North America"],
             datasets: [
               {
-                backgroundColor: ["red", "gray","yellow","gray","blue","pink","orange"],
-                data: [80,20,90,10,100,100]
+                label: "Population (millions)",
+                backgroundColor: ["#3e95cd", "#fff","#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+                data: [80,20,100,100,100]
               }
             ]
           },
           options: {
             title: {
               display: true,
-              text: 'Analysis'
+              text: 'Predicted world population (millions) in 2050'
             }
           }
       });
     </script>
-
-
 
   </body>
 

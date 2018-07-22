@@ -59,9 +59,7 @@
 
     <header class="header text-center pb-0">
       <div class="container">
-        <h1 class="display-4">CREDIT SCORE </h1>
-        <h4 class="display-8">USING ALTERNATIVE DATA FOR OUR SCORING SYSTEM</h4>
-
+        <h1 class="display-4">CREDIT SCORE</h1>
       </div>
     </header>          
 
@@ -79,6 +77,7 @@
           data: {
             datasets: [
               {
+                label: "Alternate Data",
                 backgroundColor: ["red", "gray","yellow","gray","blue","pink","orange"],
                 data: [80,20,90,10,100,100]
               }
@@ -87,14 +86,13 @@
           options: {
             title: {
               display: true,
-              text: 'Analysis'
+              text: 'Alternate Data'
             }
           }
       });
     </script>
 
-
-
   </body>
 
 </html>
+
